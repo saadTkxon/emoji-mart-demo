@@ -1,23 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import EmojiPicker from "emoji-picker-react";
 
 function App() {
+  const [text, setText] = useState("");
+  const [showPicker, setShowPicker] = useState(false);
+
+  const onEmojiClick = (emojiData) => {
+    setText((prev) => prev + emojiData.emoji);
+    setShowPicker(false);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+      justifyContent: "center",
+      height: "100vh",
+      backgroundColor: "#f8f9fa",
+    }}>
+     
+
+      
+
+    
+
+      {showPicker && (
+        <div style={{ marginTop: "10px" }}>
+          <EmojiPicker onEmojiClick={onEmojiClick} />
+        </div>
+      )}
     </div>
   );
 }
