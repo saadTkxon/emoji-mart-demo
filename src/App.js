@@ -25,11 +25,11 @@ function App() {
 
     
 
-      {showPicker && (
+      
         <div style={{ marginTop: "10px" }}>
           <EmojiPicker onEmojiClick={onEmojiClick} />
         </div>
-      )}
+   
     </div>
   );
 }
