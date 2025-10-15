@@ -4,10 +4,6 @@ A simple React application demonstrating an **interactive emoji picker** using t
 
 ---
 
-## Demo
-
-![Emoji Picker Demo](React-App-10-16-2025_02_24_AM.png)  
-*Click on an emoji to see it appear below!*
 
 ---
 
