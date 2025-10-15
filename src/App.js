@@ -60,7 +60,7 @@ function App() {
         <p>
            GitHub Repo:{" "}
           <a
-            href="https://github.com/yourusername/emoji-picker-demo"
+            href="https://github.com/saadTkxon/emoji-mart-demo"
             target="_blank"
             rel="noopener noreferrer"
             style={{ color: "#0073b1" }}
